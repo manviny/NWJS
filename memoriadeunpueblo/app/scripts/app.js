@@ -1,5 +1,18 @@
 'use strict';
 
+try {
+
+    var gui = require('nw.gui');
+    var  currentWindow = gui.Window.get();
+    currentWindow.isFullscreen = true;
+
+    // alert(gui.App.dataPath);                  // path to save files
+
+    currentWindow.on('minimize', function(){ alert('Minimizing the window'); })
+
+}
+catch(err) { }
+
 /**
  * @ngdoc overview
  * @name memoriadeunpuebloApp
