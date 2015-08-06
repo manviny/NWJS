@@ -4,7 +4,13 @@ try {
 
     var gui = require('nw.gui');
     var  currentWindow = gui.Window.get();
-    currentWindow.isFullscreen = true;
+    
+    // MENU
+    var menu = new gui.Menu();
+    menu.append(new gui.MenuItem({label: 'Menu item'}));
+
+    // currentWindow.enterKioskMode();
+    // currentWindow.isFullscreen = true;        // full screen
 
     // alert(gui.App.dataPath);                  // path to save files
 
@@ -35,10 +41,6 @@ angular
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
       })
       .otherwise({
         redirectTo: '/'

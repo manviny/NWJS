@@ -47,3 +47,20 @@
         <img src="https://farm1.static.flickr.com/455/20261408415_30f508539c_s.jpg" alt="Orange">
     </a>
 </div>
+
+
+
+
+  <form class="form-signin" role="form"  ng-submit="login()">
+
+    <h1 class="form-signin-heading text-muted">{{appCliente}}</h1>
+
+      <input type="text" class="form-control input-sm chat-input" placeholder="nombre de usuario"  ng-model="credentials.username" required autofocus>
+      <input type="password" class="form-control input-sm chat-input" placeholder="Contraseña" ng-model="credentials.password"  ng-enter="login()"  required>
+
+            <div class="wrapper">
+            <span class="group-btn">     
+                <a class="btn btn-primary btn-md" ng-click="login()">entrar <i class="fa fa-sign-in"></i></a>
+            </span>
+            </div>
+  </form>

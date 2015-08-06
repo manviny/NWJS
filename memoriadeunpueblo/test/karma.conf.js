@@ -38,6 +38,7 @@ module.exports = function(config) {
       'bower_components/blueimp-gallery/js/blueimp-gallery-video.js',
       'bower_components/blueimp-gallery/js/blueimp-gallery-vimeo.js',
       'bower_components/blueimp-gallery/js/blueimp-gallery-youtube.js',
+      'bower_components/angular-dreamfactory/angular-dreamfactory.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",
